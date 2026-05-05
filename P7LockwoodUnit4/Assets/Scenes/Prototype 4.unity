@@ -230,7 +230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 4808916618754691829, guid: cf312074cc99df24f80629c404d3bf39, type: 3}
-  enemyCount: 0
+  powerupPrefab: {fileID: 7172904741854994346, guid: 35b7508662faca84dbfe501bf71dac0b, type: 3}
+  enemyCount: 1
+  waveNumber: 1
 --- !u!4 &765541885
 Transform:
   m_ObjectHideFlags: 0
@@ -334,7 +336,7 @@ GameObject:
   - component: {fileID: 1167669516}
   - component: {fileID: 1167669517}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,7 +425,7 @@ Transform:
   m_GameObject: {fileID: 1167669511}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -469,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  hasPowerup: 0
+  hasPowerup: 1
   powerupIndicator: {fileID: 7172904741854994346, guid: 35b7508662faca84dbfe501bf71dac0b, type: 3}
 --- !u!1 &1211016355
 GameObject:
@@ -957,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8290690503777527781, guid: 35b7508662faca84dbfe501bf71dac0b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.49
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 8290690503777527781, guid: 35b7508662faca84dbfe501bf71dac0b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1007,5 +1009,5 @@ SceneRoots:
   - {fileID: 1167669515}
   - {fileID: 2053797244}
   - {fileID: 765541885}
-  - {fileID: 8312860262554525228}
   - {fileID: 1124992305}
+  - {fileID: 8312860262554525228}
